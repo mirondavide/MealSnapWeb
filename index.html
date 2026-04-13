@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MealSnap — Turn Any Photo Into Dinner</title>
+  <meta name="description" content="Snap your ingredients. Get 3 recipes you can actually cook with what's already in your kitchen. Powered by Claude AI. iPhone only." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MealSnap — Turn Any Photo Into Dinner" />
+  <meta property="og:description" content="Photo your ingredients, get recipes you can actually make. Powered by Claude AI." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mealsnap.app/" />
+  <!-- REPLACE: OG share image, recommended 1200x630px -->
+  <meta property="og:image" content="images/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/app-icon.jpeg" />
+  <link rel="apple-touch-icon" href="images/app-icon.jpeg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="MealSnap home">
+        <img src="images/app-icon.jpeg" alt="" class="logo-mark" />
+        <span class="logo-text">MealSnap</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#faq">FAQ</a>
+        <a href="#download">Download</a>
+      </nav>
+
+      <a href="https://apps.apple.com/us/app/mealsnap-ai-recipe-generator/id6761649730" class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener">Download</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#faq">FAQ</a>
+      <a href="#download">Download</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============== HERO ============== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Powered by Claude AI</span>
+          <h1>Turn Any Photo<br/>Into Dinner.</h1>
+          <p class="lede">
+            Snap your ingredients. Get 3 recipes you can actually cook with
+            what's already in your kitchen. No meal planning. No grocery runs.
+            No more "what's for dinner?"
+          </p>
+
+          <div class="hero-cta">
+            <a href="https://apps.apple.com/us/app/mealsnap-ai-recipe-generator/id6761649730" class="appstore-badge" aria-label="Download MealSnap on the App Store" target="_blank" rel="noopener">
+              <!-- Apple App Store badge SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" role="img" aria-hidden="true">
+                <rect width="120" height="40" rx="8" fill="#000"/>
+                <g fill="#fff">
+                  <path d="M25.5 20.7c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.6 2.2-1.6 2.7-.4 6.7 1.1 8.9.7 1.1 1.6 2.3 2.7 2.2 1.1 0 1.5-.7 2.8-.7 1.3 0 1.6.7 2.8.7 1.2 0 1.9-1.1 2.6-2.2.8-1.2 1.2-2.5 1.2-2.6-.1 0-2.4-.9-2.4-3.5zm-2.2-6.4c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1.1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z"/>
+                  <text x="35" y="17" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#fff">Download on the</text>
+                  <text x="35" y="29" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">App Store</text>
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <ul class="social-proof">
+            <li><strong>Claude AI</strong><span>Vision-powered</span></li>
+            <li><strong>3 Recipes</strong><span>Per scan</span></li>
+            <li><strong>10K+</strong><span>Recipes generated</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <!-- REPLACE: hero phone screenshot, recommended 800x1600px -->
+          <img src="images/hero-phone.png" alt="MealSnap home screen showing the Scan Ingredients button on an iPhone" class="hero-phone" />
+          <div class="hero-blob" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== FEATURES 1 ============== -->
+    <section class="section features" id="features">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Features</span>
+          <h2>Cook Smarter, Not Harder</h2>
+          <p>Three taps from the photo on your counter to dinner on the table.</p>
+        </header>
+
+        <div class="cards-3">
+          <article class="card">
+            <div class="card-icon">
+              <!-- camera -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h3l2-2h8l2 2h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="4"/></svg>
+            </div>
+            <h3>Snap &amp; Detect</h3>
+            <p>Take a photo of your ingredients. Our AI identifies them in seconds, no typing required.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <!-- sparkles / AI -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>
+            </div>
+            <h3>3 Recipes Instantly</h3>
+            <p>Get three personalized recipes that use what you already have, with full step-by-step instructions.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <!-- heart -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 7.2a5.4 5.4 0 0 0-9.3-3.4l-.5.5-.5-.5a5.4 5.4 0 0 0-7.7 7.6L12 21l9.3-9.6a5.4 5.4 0 0 0-.5-4.2z"/></svg>
+            </div>
+            <h3>Save Your Favorites</h3>
+            <p>Loved a recipe? Save it and access it anytime, even offline.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== FEATURES 2 ============== -->
+    <section class="section features features-alt">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Premium</span>
+          <h2>Made for Real Kitchens</h2>
+          <p>Built around the way you actually cook — and the way you actually eat.</p>
+        </header>
+
+        <div class="cards-3">
+          <article class="card">
+            <div class="card-icon">
+              <!-- leaf -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21c0-9 7-16 16-16-1 9-6 14-16 16z"/><path d="M5 21c5-5 9-9 14-13"/></svg>
+            </div>
+            <span class="badge">Premium</span>
+            <h3>Dietary Filters</h3>
+            <p>Vegetarian, vegan, gluten-free, keto, dairy-free, low-carb. We've got every diet covered.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <!-- shopping cart -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="21" r="1.2"/><circle cx="18" cy="21" r="1.2"/></svg>
+            </div>
+            <span class="badge">Premium</span>
+            <h3>Shopping Lists</h3>
+            <p>Missing an ingredient? Export a shopping list with one tap.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <!-- globe -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            </div>
+            <span class="badge">Premium</span>
+            <h3>Cuisine Preferences</h3>
+            <p>Craving Italian, Asian, Mexican? Tell us your mood and we'll match recipes to it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== SCREENSHOTS ============== -->
+    <section class="section screenshots" id="screenshots">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Screenshots</span>
+          <h2>A Look Inside the App</h2>
+          <p>From snap to plate, in five quick steps.</p>
+        </header>
+
+        <div class="screens-row">
+          <figure class="screen-card">
+            <!-- REPLACE: screenshot 1 — Scan Ingredients, recommended 800x1600px -->
+            <img src="images/screen-1.png" alt="MealSnap home screen with Scan Ingredients call-to-action" />
+            <figcaption>Scan Ingredients</figcaption>
+          </figure>
+          <figure class="screen-card">
+            <!-- REPLACE: screenshot 2 — Edit Your List, recommended 800x1600px -->
+            <img src="images/screen-2.png" alt="MealSnap profile and preferences screen" />
+            <figcaption>Edit Your List</figcaption>
+          </figure>
+          <figure class="screen-card">
+            <!-- REPLACE: screenshot 3 — Browse 3 Recipes, recommended 800x1600px -->
+            <img src="images/screen-3.png" alt="MealSnap recipes list with three suggested recipes" />
+            <figcaption>Browse 3 Recipes</figcaption>
+          </figure>
+          <figure class="screen-card">
+            <!-- REPLACE: screenshot 4 — Cook Step-by-Step, recommended 800x1600px -->
+            <img src="images/screen-4.png" alt="MealSnap recipe steps screen with numbered instructions" />
+            <figcaption>Cook Step-by-Step</figcaption>
+          </figure>
+          <figure class="screen-card">
+            <!-- REPLACE: screenshot 5 — Your Favorites, recommended 800x1600px -->
+            <img src="images/screen-5.png" alt="MealSnap saved favorites recipe list" />
+            <figcaption>Your Favorites</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== TESTIMONIALS ============== -->
+    <section class="section testimonials">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Reviews</span>
+          <h2>Loved by Home Cooks</h2>
+          <p>Real people, real fridges, real dinners.</p>
+        </header>
+
+        <div class="cards-3 testimonial-grid">
+          <article class="testimonial">
+            <p>"I used to stare at my fridge for 20 minutes every night. Now I snap a photo, pick a recipe, and dinner is done. Saved $40 on takeout this week."</p>
+            <div class="who">
+              <span class="avatar" style="background:#FF6B47">SK</span>
+              <div><strong>Sarah K.</strong><span>Working Mom of Two</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>"I'm broke and lazy and this app is basically my personal chef. Photo of the sad veggies in my fridge → actual dinner. Magic."</p>
+            <div class="who">
+              <span class="avatar" style="background:#4CAF50">MT</span>
+              <div><strong>Marco T.</strong><span>College Student</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>"Between work and the gym I have zero brain left for meal planning. MealSnap decides for me in 10 seconds and the recipes actually slap."</p>
+            <div class="who">
+              <span class="avatar" style="background:#E8512E">PR</span>
+              <div><strong>Priya R.</strong><span>Busy Professional</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>"Three picky kids, one tired dad. I scan whatever's left in the fridge and MealSnap finds something everyone will actually eat. Lifesaver."</p>
+            <div class="who">
+              <span class="avatar" style="background:#FF8A6E">JL</span>
+              <div><strong>James L.</strong><span>Dad of Three</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>"The vegetarian filter is perfect — no more 'just remove the chicken' suggestions. Discovered five new recipes in my first week."</p>
+            <div class="who">
+              <span class="avatar" style="background:#4CAF50">EG</span>
+              <div><strong>Elena G.</strong><span>Vegetarian Foodie</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>"I prep on Sundays. I scan everything I bought, get a week of recipes, export the shopping list. MealSnap replaced three different apps for me."</p>
+            <div class="who">
+              <span class="avatar" style="background:#2B1810">DO</span>
+              <div><strong>David O.</strong><span>Meal Prep Enthusiast</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== FAQ ============== -->
+    <section class="section faq" id="faq">
+      <div class="container faq-wrap">
+        <header class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you might want to know before you scan.</p>
+        </header>
+
+        <ul class="faq-list" role="list">
+          <li class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Is my data private?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Yes. Your photos are processed securely and are never shared, sold, or used to train external models. We only keep the structured ingredient list and your saved recipes — and you can delete them at any time from inside the app.</p>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>How accurate is the ingredient detection?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Very accurate for clearly visible items in good light. We use Claude Vision, which handles fresh produce, packaged goods, and pantry staples. You can always tweak the list — add what was hiding, remove anything you don't want to use.</p>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Do I need to subscribe to use the app?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a">
+              <p>No. The free plan includes 5 scans per day, 3 recipes per scan, and up to 10 saved favorites — enough for most weeknight cooks. Premium unlocks the extras when you want more flexibility.</p>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>What's included in MealSnap Premium?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Premium ($4.99/month) includes unlimited scans, dietary filters (vegetarian, vegan, gluten-free, dairy-free, keto, low-carb), unlimited saved favorites, one-tap shopping list export, and cuisine preferences like Italian, Asian, and Mexican.</p>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Can I use it offline?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a">
+              <p>Scanning ingredients and generating new recipes needs an internet connection because the AI runs in the cloud. But your saved favorites are cached on your device, so you can pull up any recipe you've saved even when you're offline.</p>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Which devices are supported?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a">
+              <p>MealSnap is available on iPhone running iOS 15 or later. Android is not supported at this time.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============== BOTTOM CTA ============== -->
+    <section class="section cta-bottom" id="download">
+      <div class="container cta-inner">
+        <h2>Stop Wondering<br/>What's for Dinner.</h2>
+        <p>Download MealSnap and turn your fridge into a recipe book.</p>
+        <a href="https://apps.apple.com/us/app/mealsnap-ai-recipe-generator/id6761649730" class="appstore-badge appstore-badge-lg" aria-label="Download MealSnap on the App Store" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" role="img" aria-hidden="true">
+            <rect width="120" height="40" rx="8" fill="#000"/>
+            <g fill="#fff">
+              <path d="M25.5 20.7c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.6 2.2-1.6 2.7-.4 6.7 1.1 8.9.7 1.1 1.6 2.3 2.7 2.2 1.1 0 1.5-.7 2.8-.7 1.3 0 1.6.7 2.8.7 1.2 0 1.9-1.1 2.6-2.2.8-1.2 1.2-2.5 1.2-2.6-.1 0-2.4-.9-2.4-3.5zm-2.2-6.4c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1.1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z"/>
+              <text x="35" y="17" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#fff">Download on the</text>
+              <text x="35" y="29" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">App Store</text>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <img src="images/app-icon.jpeg" alt="" class="logo-mark" />
+          <span class="logo-text">MealSnap</span>
+        </a>
+        <p>Photo your ingredients, get recipes you can actually make.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="mailto:hello@mealsnap.app">Contact</a></li>
+          <li><a href="mailto:hello@mealsnap.app">Help</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="https://mirondavide.com/MealSnap_terms-privacy/privacy.html" target="_blank" rel="noopener">Privacy Policy</a></li>
+          <li><a href="https://mirondavide.com/MealSnap_terms-privacy/terms.html" target="_blank" rel="noopener">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 MealSnap. All rights reserved.</span>
+      <a href="mailto:hello@mealsnap.app">hello@mealsnap.app</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
