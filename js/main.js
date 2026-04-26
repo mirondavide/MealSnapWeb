@@ -1,4 +1,4 @@
-/* MealSnap — minimal vanilla JS for FAQ accordion + mobile menu */
+/* Frix — minimal vanilla JS for FAQ accordion + mobile menu */
 
 (function () {
   'use strict';
